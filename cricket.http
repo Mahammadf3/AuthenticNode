@@ -1,0 +1,53 @@
+
+GET http://localhost:3009/
+
+
+###
+
+PUT http://localhost:3009/cricket/9/
+Content-Type: application/json
+
+{
+    "id":7,
+    "name":"jadeja",
+    "age":37,
+    "debut":"2009-2-2",
+    "centuris":9,
+    "halfcenturies":12,
+    "country":"India"
+}
+
+###
+
+DELETE http://localhost:3009/cricket/14
+
+###
+POST http://localhost:3009/register/
+Content-Type: application/json
+
+{
+    "id":15,
+  
+    "name":"dk",
+    "age":37,
+    "debut":"2001-6-2",
+    "centuris":29,
+    "halfcenturies":52,
+    "country":"India",
+    "password":"5240"
+}
+
+###
+POST http://localhost:3009/login
+Content-Type: application/json
+
+{
+
+  
+    "name":"dk",
+    "password":"5240"
+}
+
+###
+GET http://localhost:3009/cricket1/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZGsiLCJpYXQiOjE2OTA5OTMyNDF9.1SizFNkETt8nBOAl8uxQOjU4iCSNdNmcwal5tIf41ZQ
